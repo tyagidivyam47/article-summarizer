@@ -78,7 +78,13 @@ const Demo = () => {
       </div>
       <div className='my-10 max-w-full flex justify-center items-center'>
         {fetching ? (
+          <>
           <img src={loader} alt='loader' className='w-20 h-20 object-contain' />
+          <p className='font-light text-gray-600'>Please wait <br />This may take a while</p>
+          </>
+          
+          
+          
         ) : error ? (
           <p className='font-inter font-bold text-black text-center'>
             Something's Wrong 😬️
